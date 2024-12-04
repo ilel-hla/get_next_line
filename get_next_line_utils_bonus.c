@@ -6,7 +6,7 @@
 /*   By: ilel-hla <ilel-hla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 21:02:18 by ilel-hla          #+#    #+#             */
-/*   Updated: 2024/12/03 21:31:05 by ilel-hla         ###   ########.fr       */
+/*   Updated: 2024/12/04 12:13:32 by ilel-hla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ size_t	ft_strlen(char *str)
 		i++;
 	return (i);
 }
+
 char	*ft_strdup(const char *s1)
 {
 	int		i;
@@ -44,9 +45,10 @@ char	*ft_strdup(const char *s1)
 	dst[i] = '\0';
 	return (dst);
 }
+
 char	*ft_strjoin(char *s1, char *s2)
 {
-	char *result;
+	char	*result;
 	size_t	i;
 	size_t	j;
 
@@ -69,7 +71,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	while (s2 && j < ft_strlen(s2))
 		result[i++] = s2[j++];
 	result[ft_strlen(s1) + ft_strlen(s2)] = '\0';
-	return(result);
+	return (result);
 }
 
 char	*ft_strchr(char *s, int c)
